@@ -26,3 +26,15 @@ test('it returns an object with the correct \'original\' for tildes', (t, input)
     ['~~plain text here~~'],
     ['~~woop dee doo~~']
 ]);
+
+test('it returns an object with the correct \'parsed\' for tildes', (t, input, expected) => {
+
+    let output = strong(input);
+
+    t.assert.equal(expected, output.parsed);
+
+}, [
+    ['~~apples and oranges~~', 'apples and oranges'],
+    ['~~plain text here~~', 'plain text here'],
+    ['~~woop dee doo~~', 'woop dee doo']
+]);
