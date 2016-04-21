@@ -1,6 +1,6 @@
 {
   "name": "quickmark-rule-strikethrough",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Strikethrough rule for Quickmark",
   "main": "index.js",
   "files": [
